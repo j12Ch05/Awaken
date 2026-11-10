@@ -1,0 +1,90 @@
+
+======================================================================
+1. OVERVIEW
+======================================================================
+Root: /content/raw
+Files: 66521   Total size: 2.8 GB
+
+Files by extension (count, size):
+  .jpg          66521   2.8 GB
+
+======================================================================
+2. FOLDER STRUCTURE (depth 3, counts of files per folder)
+======================================================================
+  .  [66521 files incl. subfolders]
+    train_data  [66521 files incl. subfolders]
+      train_data/drowsy  [36030 files incl. subfolders]
+      train_data/notdrowsy  [30491 files incl. subfolders]
+
+Images per folder (top 40) - folder names are often the class labels:
+     36030  train_data/drowsy
+     30491  train_data/notdrowsy
+
+======================================================================
+3. FILE NAMES (look for subject / session / frame IDs)
+======================================================================
+25 random image paths:
+  /content/raw/train_data/drowsy/001_noglasses_sleepyCombination_1933_drowsy.jpg
+  /content/raw/train_data/drowsy/002_glasses_sleepyCombination_1081_drowsy.jpg
+  /content/raw/train_data/drowsy/002_glasses_slowBlinkWithNodding_1280_drowsy.jpg
+  /content/raw/train_data/drowsy/002_glasses_slowBlinkWithNodding_1796_drowsy.jpg
+  /content/raw/train_data/drowsy/002_glasses_slowBlinkWithNodding_506_drowsy.jpg
+  /content/raw/train_data/drowsy/002_noglasses_slowBlinkWithNodding_1508_drowsy.jpg
+  /content/raw/train_data/drowsy/002_noglasses_slowBlinkWithNodding_1570_drowsy.jpg
+  /content/raw/train_data/drowsy/002_noglasses_yawning_1151_drowsy.jpg
+  /content/raw/train_data/drowsy/005_noglasses_sleepyCombination_2933_drowsy.jpg
+  /content/raw/train_data/drowsy/005_noglasses_yawning_2635_drowsy.jpg
+  /content/raw/train_data/drowsy/006_glasses_sleepyCombination_1634_drowsy.jpg
+  /content/raw/train_data/notdrowsy/001_glasses_nonsleepyCombination_1820_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/001_glasses_sleepyCombination_456_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/001_glasses_slowBlinkWithNodding_8_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/001_noglasses_nonsleepyCombination_2597_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/002_glasses_nonsleepyCombination_181_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/002_glasses_nonsleepyCombination_2321_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/002_noglasses_nonsleepyCombination_1775_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/002_noglasses_yawning_1230_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/005_glasses_nonsleepyCombination_2284_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/005_glasses_sleepyCombination_49_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/005_noglasses_yawning_153_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/005_noglasses_yawning_881_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/006_glasses_nonsleepyCombination_2031_notdrowsy.jpg
+  /content/raw/train_data/notdrowsy/006_glasses_slowBlinkWithNodding_667_notdrowsy.jpg
+
+Filename patterns (digits replaced by #), top 10:
+     12110  #_glasses_nonsleepyCombination_#_notdrowsy.jpg
+      9919  #_glasses_sleepyCombination_#_drowsy.jpg
+      8713  #_noglasses_nonsleepyCombination_#_notdrowsy.jpg
+      7742  #_noglasses_sleepyCombination_#_drowsy.jpg
+      4863  #_glasses_slowBlinkWithNodding_#_drowsy.jpg
+      4549  #_noglasses_slowBlinkWithNodding_#_drowsy.jpg
+      4477  #_glasses_yawning_#_drowsy.jpg
+      4385  #_noglasses_yawning_#_drowsy.jpg
+      2369  #_glasses_slowBlinkWithNodding_#_notdrowsy.jpg
+      1898  #_noglasses_yawning_#_notdrowsy.jpg
+
+Most common non-numeric tokens in names (may be class or subject words):
+  drowsy(20000), glasses(10117), noglasses(9883), sleepyCombination(9513), slowBlinkWithNodding(5280), yawning(5207)
+
+Distinct values of the FIRST number in filenames: 4 (if 5-200 this is probably a subject ID). Top: 001(19016), 002(15134), 005(13087), 006(2763)
+
+======================================================================
+4. IMAGES (sampled)
+======================================================================
+Loose images: 66521
+Sampled 300 images
+Modes: RGB=300
+Sizes (WxH): (640, 480)=300
+Grayscale content (R=G=B everywhere): 300/300
+Contact sheet of 24 random images saved to: sample_sheet.jpg  (please send/look at it)
+
+======================================================================
+5. LABEL / ANNOTATION FILES
+======================================================================
+Candidate label/metadata files: 0
+None found -> labels are probably folder names, file names, or inside parquet/archives.
+
+======================================================================
+9. QUICK ANSWERS (for the plan)
+======================================================================
+Loose images: 66521 | .txt: 0 | .xml: 0 | .json: 0 | parquet: 0
+-> Images without label files: labels are likely the folder names -> auto-label with MediaPipe.
