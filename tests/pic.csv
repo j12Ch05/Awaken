@@ -1,0 +1,2 @@
+image,face_found,img_w,img_h,ear_left,ear_right,ear,mar,pitch,yaw,roll,face_x1,face_y1,face_x2,face_y2,leye_x1,leye_y1,leye_x2,leye_y2,reye_x1,reye_y1,reye_x2,reye_y2,mouth_x1,mouth_y1,mouth_x2,mouth_y2
+pic.jpg,1,1280,720,0.2686,0.275,0.2718,0.0077,-7.86,-9.84,-7.8,516.7,173.2,832.7,519.4,689.8,281.3,748.6,309.2,586.3,296.4,643.2,323.9,634.3,380.2,728.7,421.5
